@@ -1,5 +1,5 @@
 import './App.css';
-import Pokedex from './Pokedex';
+import Pokegame from './Pokegame';
 
 const pokemon = [
   {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
@@ -14,9 +14,7 @@ const pokemon = [
 
 function App() {
   return (
-    <div className="App">
-      <Pokedex pokemon={pokemon} />
-    </div>
+    <Pokegame pokemon={pokemon}/>
   );
 };
 
