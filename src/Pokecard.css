@@ -8,3 +8,7 @@
     display: inline-block;
     text-align: center;
 }
+
+.Pokecard:hover {
+    box-shadow: -2px 2px purple, 3px -3px purple;
+}
