@@ -1,4 +1,5 @@
 import Pokedex from './Pokedex';
+import './Pokegame.css';
 
 const Pokegame = ({pokemon}) => {
     for(let i = 0; i < pokemon.length; i++) {
@@ -13,7 +14,8 @@ const Pokegame = ({pokemon}) => {
     let exp2 = pokemon2.reduce((acc, p) => (acc+=p.base_experience), 0);
     let pokemon1Wins = exp1>exp2 ? true : false;
     return (
-        <div className="App">
+        <div className="Pokegame">
+            <h1 className="Pokegame-header">Pokegame</h1>
             <Pokedex pokemon={pokemon1} exp={exp1} isWinner={pokemon1Wins}/>
             <Pokedex pokemon={pokemon2} exp={exp2} isWinner={!pokemon1Wins} />
         </div>
